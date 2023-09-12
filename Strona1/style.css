@@ -66,6 +66,7 @@ a{
     color: black;
     border: solid 2px #d6bb22;
     margin-left: 60%;
+    text-decoration: none;
 }
 
 a:hover{
@@ -80,4 +81,30 @@ img{
     border: solid 2px #d6bb22;
     border-radius: 100%;
     align-self: center;
+}
+
+.BackSite{
+    display: flex;
+    flex-direction: row;
+}
+
+.BackSiteIMG{
+    width: 500px;
+    height: 500px;
+    border: solid 0;
+}
+
+.BackSiteA{
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 15vw;
+    top: 30px;
+    background-color: #202020;
+    color: #d6bb22;
+}
+.BackSiteA:hover{
+    transition-duration: 0.2s;
+    background-color: #505050;
+    color: #d6bb22;
 }
