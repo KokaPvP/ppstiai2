@@ -28,3 +28,22 @@ footer{
     align-items: center;
     padding: 20px;
 }
+.Text{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li{
+    background-color: #202020;
+    padding: 20px;
+    width: 14%;
+
+}
