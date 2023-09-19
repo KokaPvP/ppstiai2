@@ -33,6 +33,21 @@ footer{
     background-color: #202020;
     margin: 20px;
     border-radius: 10%;
+    height: 35vh;
+    overflow-y: scroll;
+    padding: 20px;
+    height: 80%;
+    width: 90%;
+}
+
+.TextCon{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10%;
+    height: 35vh;
+    padding: 20px;
+
+
 }
 
 ul{
@@ -109,3 +124,27 @@ img{
     background-color: #505050;
     color: #d6bb22;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-corner {
+background: #555;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
