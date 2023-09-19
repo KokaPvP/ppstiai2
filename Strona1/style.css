@@ -3,6 +3,7 @@ body{
     margin: 0;
     background-color: #4b4b4b;
     width: 97vw;
+    overflow-x:hidden;
 }
 nav{
     width: 100%;
@@ -17,6 +18,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 section{
     width: 80%;
@@ -99,6 +101,7 @@ img{
     align-self: center;
 }
 
+
 .BackSite{
     display: flex;
     flex-direction: row;
@@ -147,4 +150,85 @@ background: #555;
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #888;
+  }
+
+  .Tabela{
+    background-color: #202020;
+    margin: 20px;
+    border-radius: 10%;
+    height: 35vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .scroll{
+    overflow-x: scroll;
+    width: 5000px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .Tabela1{
+    border: solid 2px #d6bb22;
+    margin-left: 30px;
+  }
+
+  .Tabela1 tr:last-child, .Tabela1 tr:nth-child(2){
+    background-color: #d6bb22;
+    color: #202020;
+  }
+
+  .Tabela1 tr:nth-child(2) td:first-child,  .Tabela1 tr:nth-child(2) td:last-child,   .Tabela1 tr:nth-child(4) td:first-child,  .Tabela1 tr:nth-child(4) td:last-child{
+    color: green;
+  }
+
+  .Tabela1 tr:nth-child(3) td:nth-child(2){
+    color:red;
+  }
+
+  .Tabela1 td, .Tabela1 th
+  {
+padding: 20px;
+width: 150px;
+border: solid 2px #222;
+  }
+
+  .Tabela2{
+    border: solid 2px #d6bb22;
+    margin-left: 30px;
+  }
+
+  .Tabela2 tr:first-child, .Tabela2 tr:nth-child(3){
+    background-color: #d6bb22;
+    color: #202020;
+  }
+
+  .Tabela2 tr:nth-child(2) td:first-child,  .Tabela2 tr:nth-child(2) td:last-child,   .Tabela2 tr:nth-child(4) td:first-child,  .Tabela2 tr:nth-child(4) td:last-child{
+    color: red;
+  }
+
+  .Tabela2 tr:nth-child(3) td:nth-child(2){
+    color:green;
+  }
+
+  .Tabela2 td, .Tabela2 th
+  {
+padding: 20px;
+width: 150px;
+border: solid 2px #222;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+  span{
+    background-color: white;
+    color: red;
+    text-overflow: clip;
   }
