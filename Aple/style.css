@@ -67,10 +67,36 @@ body{
 .Ipone15 img{
     position: relative;
     left: 300px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .white{
-    background-color: white;
+    background-color: #F5F5F5;
     color: black;
+}
+
+.Stopa{
+    width: 100%;
+    background-color: #F5F5F5;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.StopaContent{
+    width: 60%;
+    display: block;
+}
+.StopaListy{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.StopaListyColumn{
+    width: 25%;
+}
+
+ul {
+    list-style: none;
 }
