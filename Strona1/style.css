@@ -1,3 +1,5 @@
+@media (min-width: 50px)
+{
 body{
     padding: 0;
     margin: 0;
@@ -54,15 +56,23 @@ footer{
 
 ul{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
     list-style: none;
+    overflow-x: scroll;
+    @media (min-width: 1500px){
+      overflow-x: hidden;
+    }
+}
+
+.ul{
+  display: flex;
+  justify-content: space-between;
+  width: 1450px;
 }
 
 li{
     background-color: #202020;
     padding: 20px;
-    width: 14%;
+    width: 200px;
     border-radius: 5px;
     border: solid 0px #d6bb22;
     margin: 2px;  
@@ -244,3 +254,98 @@ border: solid 2px #222;
         position: sticky;
         top: 0;
   }
+
+
+  *{
+    @media (max-width: 1500px){
+      background-color: #322;
+      color: #322;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1450px){
+      background-color: #422;
+      color: #422;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1400px){
+      background-color: #522;
+      color: #522;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1350px){
+      background-color: #622;
+      color: #622;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1300px){
+      background-color: #722;
+      color: #722;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1250px){
+      background-color: #822;
+      color: #822;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1200px){
+      background-color: #922;
+      color: #922;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1150px){
+      background-color: #A22;
+      color: #A22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1100px){
+      background-color: #B22;
+      color: #B22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1050px){
+      background-color: #C22;
+      color: #C22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 1000px){
+      background-color: #D22;
+      color: #D22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 950px){
+      background-color: #E22;
+      color: #E22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 900px){
+      background-color: #F22;
+      color: #F22;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 850px){
+      background-color: #F11;
+      color: #F11;
+      width: 10px;
+      height: 1px;
+    }
+    @media (max-width: 800px){
+      background-color: #F00;
+      color: #F00;
+      width: 10px;
+      height: 1px;
+    }
+  }
+}
