@@ -108,3 +108,7 @@ main{
     color:  white;
     --layered-image-desktop: url("https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3871/5fff855….png");
 }
+
+#sec2 p{
+    font-size: 20pt;
+}
