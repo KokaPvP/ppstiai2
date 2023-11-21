@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}
+.open{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    @media (max-width:500px) {
+        flex-wrap: wrap;
+    }
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    margin: 40px 0 40px 0;
+    
+}
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+    }
+}
+
+.logoWrapper, nav{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+    }
+}
+.navbar li{
+    padding: 0 0 0 30px;
+}
+.hero{
+    padding: 80px 0 80px 0;
+}
+.heroWrapper{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+.heroLeft, .heroRight{
+    width: 50%;
+    @media (max-width:550px) {
+        width: 100%;
+    }
+}
+.heroRight img{
+    width: 100%;
+}
+.heroLeft{
+    display: flex;
+    align-items: center     ;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+    }
+}
+.heroLeft__wrapper{
+    padding-right: 40px;
+    @media (max-width:550px) {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.heroLeft__wrapper h1{
+    font-size:  2.6rem;
+}
+.heroLeft__wrapper p{
+    font-size: 1.4rem;
+}
+@media (max-width:550px) {
+    .heroInput__wrapper{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.heroInput__wrapper input{
+    width: 55%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+}
+.heroInput__wrapper a{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    @media (max-width:550px) {
+        float: left;
+    }
+}
+.content{
+    background-color: hsl(240, 75%, 98%);
+}
+.contentWrapper{
+    widtH: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    @media (max-width:550px) {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+.contentRight, .contentLeft{
+    width: 50%;
+    @media (max-width:550px){
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contentRight img{
+    width: 100%;
+}
+.contentLeft__wrapper h2{
+    font-size: 2.6rem;
+}
+.contentLeft__wrapper a{
+    color: #359a84;
+    text-decoration: none;
+    border-bottom: solid 1px #359a84;
+    padding-bottom: 3px;
+}
+.contentLeft__wrapper{
+    padding-right: 180px;
+    line-height: 3.6rem;
+    @media (max-width:550px){
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.wave_wrapper{
+    width: 100%;
+}
+.wave__wrapper img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+.comment{
+    max-width: 40%;
+    background-color: white;
+    padding: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    @media (max-width:550px) {
+        max-width: 80%;
+    }
+}
+.commentWrapper img{
+    width: 20px;
+}
+.author{
+    display: flex;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+    }
+}
+.authorLeft img{
+    width: 50%;
+    border-radius: 100%;
+    height: 50%;
+}
+.authorRight h4{
+    font-size: .75rem;
+}
+.authorRight p{
+    font-size: .65rem;
+}
+.commentWrapper p{
+    padding: 0;
+    font-size: 1rem;
+}
+.authorRight h4, .authorRight p{
+    margin: 0;
+    padding: 0;
+}
+.authorRight{
+    padding-left: 10px;
+}
+.access{
+    background-color: #575989;
+}
+.accessWrapper{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    padding: 80px 0 80px 0;
+    @media (max-width:550px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.accessLeft{
+    color: white;
+    width: 55%;
+    @media (max-width:550px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.accessRight{
+    width: 45%;
+    display: block;
+    @media (max-width:550px) {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.accessLeft h3{
+    font-size: 2.2rem;
+    padding-top: 0;
+    margin-top: 0;
+    @media (max-width:550px) {
+        text-align: center;
+    } 
+}
+.accessLeft p{
+    padding-right: 280px;
+    @media (max-width:550px) {
+        padding: 0;
+        text-align: center;
+    } 
+}
+.accessRight__input{
+    width: 100%;
+}
+.accessRight__input input{
+    width: 80%;
+    padding: 10px 20px 10px 20px;
+}
+.accessRight a{
+    background-color: hsl(224, 98%, 58%);
+    color: white;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    background-color: #07043b;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.footerWrapper{
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+.footerWrapper__logo{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    @media (max-width:550px) {
+    }
+}
+.footerWrapper__logo img{
+    filter: brightness(0) invert(1);
+}
+.col1{
+    width: 40%;
+}
+.col2 .col3 .col4{
+    width: 15%;
+}
+.col2 nav ul .col3 nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.col2 nav ul li .col3 nav li ul{
+    padding: 10px 0 10px 0;
+}
+.col2 nav .col3 nav{
+    display: flex;
+    justify-content: start;
+    @media (max-width:550px) {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:550px) {
+    img{
+        max-width: 400px;
+    }
+}
+
+
