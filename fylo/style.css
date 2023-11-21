@@ -4,6 +4,9 @@ body,html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    @media (max-width:1400px) {
+        text-align: center;
+    }
 }
 .raleway{
     font-family: 'Raleway', sans-serif;
@@ -15,7 +18,7 @@ header{
     display: flex;
     width: 100%;
     margin: 0 auto 0 auto;
-    @media (max-width:500px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
     }
 }
@@ -28,7 +31,7 @@ header{
 .logoWrapper{
     display: flex;
     align-items: center;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
     }
 }
@@ -39,7 +42,7 @@ header{
 nav{
     display: flex;
     justify-content: end;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
     }
 }
@@ -53,7 +56,7 @@ nav{
     display: flex;
     width: 100%;
     margin: 0 auto 0 auto;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -62,8 +65,12 @@ nav{
 }
 .heroLeft, .heroRight{
     width: 50%;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
+        display: flex;
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 .heroRight img{
@@ -72,18 +79,19 @@ nav{
 .heroLeft{
     display: flex;
     align-items: center     ;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
     }
 }
 .heroLeft__wrapper{
     padding-right: 40px;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 }
 .heroLeft__wrapper h1{
@@ -92,7 +100,7 @@ nav{
 .heroLeft__wrapper p{
     font-size: 1.4rem;
 }
-@media (max-width:550px) {
+@media (max-width:1400px) {
     .heroInput__wrapper{
     padding: 0;
     display: flex;
@@ -106,6 +114,9 @@ nav{
     width: 55%;
     padding: 10px 20px 10px 20px;
     border-radius: 2px;
+    @media (max-width:1400px) {
+        width: 100%;
+    }
 }
 .heroInput__wrapper a{
     background-color: hsl(224, 93%, 58%);
@@ -114,8 +125,11 @@ nav{
     text-decoration: none;
     margin-left: 10px;
     font-weight: bold;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
+        margin-left: 0;
+        margin-top: 10px;
         float: left;
+        width: 100%;
     }
 }
 .content{
@@ -125,7 +139,7 @@ nav{
     widtH: 100%;
     margin: 0 auto 0 auto;
     display: flex;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
@@ -136,7 +150,7 @@ nav{
 }
 .contentRight, .contentLeft{
     width: 50%;
-    @media (max-width:550px){
+    @media (max-width:1400px){
         width: 100%;
         padding: 0;
         display: flex;
@@ -160,7 +174,7 @@ nav{
 .contentLeft__wrapper{
     padding-right: 180px;
     line-height: 3.6rem;
-    @media (max-width:550px){
+    @media (max-width:1400px){
         width: 100%;
         padding: 0;
         display: flex;
@@ -183,7 +197,7 @@ nav{
     margin-top: 80px;
     margin-bottom: 80px;
     border-radius: 5px;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         max-width: 80%;
     }
 }
@@ -192,7 +206,7 @@ nav{
 }
 .author{
     display: flex;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
     }
 }
@@ -226,7 +240,7 @@ nav{
     margin: 0 auto 0 auto;
     display: flex;
     padding: 80px 0 80px 0;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -238,7 +252,7 @@ nav{
 .accessLeft{
     color: white;
     width: 55%;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -249,7 +263,7 @@ nav{
 .accessRight{
     width: 45%;
     display: block;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
@@ -261,19 +275,25 @@ nav{
     font-size: 2.2rem;
     padding-top: 0;
     margin-top: 0;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         text-align: center;
     } 
 }
 .accessLeft p{
     padding-right: 280px;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         padding: 0;
         text-align: center;
     } 
 }
 .accessRight__input{
     width: 100%;
+    @media (max-width:1400px) {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        align-items: center;
+    }
 }
 .accessRight__input input{
     width: 80%;
@@ -284,7 +304,16 @@ nav{
     color: white;
     padding: 10px 50px 10px 50px;
     text-decoration: none;
+    margin-top: 10px;
     font-weight: bold;
+    float: left;
+    @media (max-width:1400px) {
+        margin-left: 0;
+        margin-top: 10px;
+        float: left;
+        text-align: center;
+        width: 75%;
+    }
 }
 footer{
     background-color: #07043b;
@@ -296,12 +325,26 @@ footer a{
 }
 .footerWrapper{
     width: 100%;
+    display: flex;
     margin: 0 auto 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width:1400px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: start;
+    }
 }
 .footerWrapper__logo{
     width: 100%;
     margin: 0 auto 0 auto;
-    @media (max-width:550px) {
+    padding-top: 20px;
+    @media (max-width:1400px) {
+        padding-top: 20px;
+        text-align: start;
     }
 }
 .footerWrapper__logo img{
@@ -309,30 +352,36 @@ footer a{
 }
 .col1{
     width: 40%;
+    @media (max-width:1400px) {
+        width: 100%;
+    }
 }
 .col2 .col3 .col4{
     width: 15%;
+    @media (max-width:1400px) {
+        width: 100%;
+    }
 }
 .col2 nav ul .col3 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.col2 nav ul li .col3 nav li ul{
+.col2 nav ul li, .col3 nav ul li{
     padding: 10px 0 10px 0;
 }
+.col2 nav ul, .col3 nav ul{
+list-style: none;
+}
+
 .col2 nav .col3 nav{
     display: flex;
     justify-content: start;
-    @media (max-width:550px) {
+    @media (max-width:1400px) {
         flex-wrap: wrap;
+        width: 100%;
     }
 }
 
-@media (max-width:550px) {
-    img{
-        max-width: 400px;
-    }
-}
 
 
