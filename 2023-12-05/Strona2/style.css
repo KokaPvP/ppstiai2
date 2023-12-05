@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(95, 32, 155);
+}
+
+header{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+footer{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+article,aside
+{
+    width: 20%;
+    background-color: rgb(95, 32, 155);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+article > div{
+    display: flex;
+    width: 90%;
+    margin: 10px 0 10px 0;
+}
+
+article > div a{
+    color:white;
+    width: 100%;
+    background-color: rgb(72, 24, 117);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    background-color: rgb(183, 142, 221);
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.content > div{
+    width: 90%;
+    display: flex;
+}
+
+.block{
+    margin: 20px;
+    padding: 10px;
+    background-color:rgb(95, 32, 155) ;
+    color: white;
+}
+
+.block img{
+    max-width: 100%;
+}
+
+.block a{
+    color:white;
+    background-color: rgb(72, 24, 117);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+aside > div{
+    width: 90%;
+    display: flex;
+}
+
+aside > div img{
+    max-width: 50%;
+    padding: 10px;
+}
+
