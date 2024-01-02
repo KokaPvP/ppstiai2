@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kartka świąteczna</title>
+</head>
+<body onload="snow()">
+    <div class="container">
+        <div class="sun"></div>
+        <div class="top">
+            <div class="top_left">
+                <div class="house_box">
+                    <div class="house_foundation-1"></div>
+                    <div class="window_1"></div>
+                    <div class="window_2"></div>
+                    <div class="house_foundation_2"></div>
+                    <div class="door"></div>
+                    <div class="roof_box">
+                        <div class="roof_2"></div>
+                        <div class="roof_1"></div>
+                    </div>
+                    <div class="house_foundation_3"></div>
+                </div>
+            </div>
+            <div class="top_right">
+                <div class="tree_box">
+                    <div class="star"></div>
+                    <div class="trees"></div>
+                    <div class="trunk"></div>
+                </div>
+            </div>
+        </div>
+            <div class="bottom">
+                <div class="bottom_left"></div>
+                <div class="bottom_right"></div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script>
+        function snow()
+        {
+            for(let i =0;i<200;i++)
+            {
+                let snow = document.createElement("div");
+                snow.classList.add("snow");
+                document.getElementsByClassName("container")[0].appendChild(snow);
+                let position = Math.floor(Math.random()*70);
+                let position2 = Math.floor(Math.random()*100);
+                snow.style.top = position+"%";
+                snow.style.left = position2+"%";
+            }
+        }
+    </script>
+</body>
+</html>
