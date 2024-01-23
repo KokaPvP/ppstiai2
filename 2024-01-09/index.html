@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="UpdateClock()">
+    <div id="block">
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+    </div>
+    <div id="suma"></div>
+
+    <script>
+        var colorCouter = 0;
+        function UpdateClock()
+        {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            
+
+            if(hours < 10) hours = "0"+hours;
+            if(minutes < 10) minutes = "0"+minutes;
+            if(seconds < 10) seconds = "0"+seconds;
+
+            if(minutes == 45)
+            {
+                if(colorCouter % 3 == 0) document.getElementById("block").style.color = "yellow";
+                if(colorCouter % 3 == 1) document.getElementById("block").style.color = "green";
+                if(colorCouter % 3 == 2) document.getElementById("block").style.color = "blue";
+                colorCouter++;
+            } 
+            else document.getElementById("block").style.color = "white";
+
+            document.getElementById("hours").innerText = hours +":";
+            document.getElementById("minutes").innerText = minutes+":";
+            document.getElementById("seconds").innerText = seconds;
+            document.getElementById("suma").innerText = parseInt(hours)  + parseInt(minutes) + parseInt(seconds);
+        }
+        
+        setInterval(UpdateClock,100);
+
+    </script>
+</body>
+</html>

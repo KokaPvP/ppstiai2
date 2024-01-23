@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="OnLoad()">
+<script src="liczonko.js"></script>
+<main>
+    <div id="inputs">
+    <label id="A0">a</label>
+    <input type="number" name="0" id="0">
+    <label id="A1">b</label>
+    <input type="number" name="1" id="1">
+    <label id="A2">c</label>
+    <input type="number" name="2" id="2">
+</div>
+<div id="Opcje">
+    <form >
+        <label id="KwadratLabel">Kwadrat <input type="radio" name="drone" id="Kwadrat" onchange="OnKwadrat()"></label>
+            <label id="ProstokątLabel">Prostokąt</label> <input type="radio" name="drone" id="Prostokąt" onchange="OnProstokąt()" >
+                <label id="TrójkątLabel">Trójkąt</label> <input type="radio" name="drone" id="Trójkąt"  onchange="OnTrójkąt()">
+                    <label id="TrapezLabel">Trapez </label><input type="radio" name="drone" id="Trapez" onchange="OnTrapez()">
+                    <label id="KołoLabel">Koło </label><input type="radio" name="drone" id="Koło" onchange="OnKoło()">
+                    <label id="KołoLabel">TrójkątCheck </label><input type="radio" name="drone" id="TrójkątCheck" onchange="OnTrójkątCheck()">
+</form>
+</div>
+<h1>Wynik:</h1> <div id="Wynik"></div>
+<div id="ButtonDiv">
+    <button type="button" onclick="Licz()">Licz</button>
+</div>
+</main>
+</body>
+</html>

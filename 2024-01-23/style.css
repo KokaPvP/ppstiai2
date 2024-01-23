@@ -1,0 +1,21 @@
+*,html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+main{
+    width: 100%;
+    margin: 100px;
+    padding: 20px;
+    background-color: gray;
+    border: solid 5px black;
+}
+
+#Wynik{
+    font-size: 3rem;
+}
