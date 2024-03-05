@@ -1,0 +1,56 @@
+console.log("zad1\n");
+
+for(let i = 10;i>=1;i--)
+{
+    console.log(i);
+}
+
+console.log("\nzad2\n");
+
+for(let i = 0;i<=200;i+=20)
+{
+    console.log(i);
+}
+
+console.log("\nzad3\n");
+
+for(let w=1;w<=5;w++)
+{
+    let wiersz = "";
+    for(let k=0;k<w;k++)
+    {
+        wiersz+="*";
+    }
+    console.log(wiersz);
+}
+
+console.log("\nzad4\n");
+
+for(let w=5;w>=1;w--)
+{
+    let wiersz = "";
+    for(let s=1;s<=5-w;s++)
+    {
+        wiersz+=" ";
+    }
+    for(let k=0;k<w*2-1;k++)
+    {
+        wiersz+="*";
+    }
+    console.log(wiersz);
+}
+
+console.log("\nzad5\n");
+
+let tablica = [];
+
+for(let i=0;i<5;i++)
+{
+    tablica[i] = i+1;
+}
+for(let i=0;i<5;i++)
+{
+    tablica[i] = Math.pow(tablica[i],3);
+}
+
+console.log(tablica);
