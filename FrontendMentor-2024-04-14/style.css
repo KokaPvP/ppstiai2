@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #114;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #226;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.header
+{
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgb(92, 92, 237);
+    padding: 15px;
+    border-radius: 20px;
+}
+.header h1{
+    font-size: 4rem;
+}
+
+main
+{
+    display: flex;
+    width: 60%;
+    margin: 50px;
+    height: 60vh;
+    align-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.buttons a{
+    color: #88B;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.buttons a:hover, .buttons a:focus,.block > div > div > a:hover{
+    color:white;
+    transition-duration: 0.3s;
+}
+
+.header img{
+    width: 50%;
+    border-radius: 100%;
+    border: solid 5px white;
+    margin-bottom: 20px;
+}
+
+#blockContainer{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 30%;
+    margin: 10px;
+    background-color: #226;
+    border-radius: 20px;
+    height: 40%;
+
+    color: white;
+}
+.block p:nth-child(2)
+{
+    font-size: 4rem;
+}
+
+.block p:nth-child(3)
+{
+    color: #88B;
+}
+
+.block > div{
+    background-color: #226;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+.block > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+.block > div > div > a{
+    text-decoration: none;
+    color: #88B;
+}
+
+.block section{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    height: 50px;
+    padding-right: 20px;
+}
+
+.block section img{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width:1000px)
+{
+    main{
+        flex-direction: column;
+        width: 90%;
+    }
+    aside{
+        width: 100%;
+    }
+    .header
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .header h1{
+        font-size: 2rem;
+    }
+    .header img{
+        width: 20%;
+        margin-right: 20px;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #blockContainer{
+        width: 100%;
+    }
+    .block{
+        width: 100%;
+        height: auto;
+        margin-bottom: 75px;
+    }
+}
